@@ -1,11 +1,12 @@
+const data = require('./data');
 const express = require('express');
 
-const PORT =  3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send({'code':200});
+app.get('/user', (req, res) => {
+    res.send(data);
 });
 
 app.listen(PORT);
