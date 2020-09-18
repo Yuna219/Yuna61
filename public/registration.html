@@ -4,12 +4,12 @@
         <title>Registration</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fir=no">
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
 	      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
 
     <body>
-        
+
         <div class="content">
         <div class="form-name">
         <h1 style="color: darkcyan; text-align: center;">Requester Registration</h1>
@@ -17,7 +17,7 @@
         <h4 style="color: darkcyan; text-align: center;">Create an iCrowdTask Account</h4>
         <br/>
         </div>
-        
+
         <form action="/register" method="POST"  class="form-body" style="width: 40%; margin: auto;" onsubmit="return(validate(event))">
           <div class="country" id="country-list">
             <label for="country">Country of residence*</label>
@@ -267,7 +267,7 @@
               <option value="Yemen">Yemen</option>
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
-            </select> 
+            </select>
           </div>
 
           <div class="form-row">
@@ -322,21 +322,21 @@
             <label for="phoneNumber">Mobile phone number</label>
             <input style="border-radius:15px;"	type="text" class="form-control" name="phoneNumber" id="phoneNumber">
           </div>
-          
+
           <br/>
 
           <div class="submit" style="margin: auto; text-align: center;">
             <button type="submit" class="register" style="color: white;" aligen="center">Create Account</button>
           </div>
-			
+
 		  <div class="button" style="margin: auto; text-align: center;">
             <button type="button" class="signup" aligen="center" ><a href="./login.html">Already Have An Account? Log In</a></button>
           </div>
-        
+
         </form>
        </div>
-       <script src="js/validator.min.js"></script>
+       <script src="assets/js/validator.min.js"></script>
 
-    
-    </body>    
+
+    </body>
 </html>

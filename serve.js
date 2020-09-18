@@ -1,21 +1,22 @@
 var express = require('express')
 var bodyParser = require('body-parser')
+var ejs = require('ejs');
 var mongoose = require('mongoose')
 var validator = require('validator')
 var alert = require('alert')
 var path = require('path')
 var bcrypt = require('bcrypt')
-var nodemailer  = require("nodemailer");
+var nodemailer = require("nodemailer");
 var saltRounds = 10;
 
-var app = express()
-//引入 body-Parser 中间件
+const app = express();
 app.use(bodyParser.urlencoded({extended: true}))
-//开放 public 文件夹
-app.use(express.static('public'))
-//连接 mongodb 数据库
+app.set('views', __dirname + '/public');
+app.engine('.html', ejs.__express);
+app.set('view engine', 'html');
+app.use('/assets', express.static('public/assets'));
+// 连接 mongodb 数据库
 mongoose.connect("mongodb+srv://iCrowdTaskDB:CybG8QInke5Rjkxj@cluster0.j9vo1.mongodb.net/cluster0?retryWrites=true&w=majority", {useNewUrlParser: true})
-
 var userSchema = new mongoose.Schema({
     country: {
         type: String,
@@ -127,43 +128,14 @@ var userSchema = new mongoose.Schema({
         }
     }
 })
-function sendMail(tos, subject, msg){
-
-    let transporter = nodemailer.createTransport({
-        service: 'qq', // 使用了内置传输发送邮件 查看支持列表：https://nodemailer.com/smtp/well-known/
-        port: 465, // SMTP 端口
-        secureConnection: true, // 使用了 SSL
-        auth: {
-            user: '1401440047@qq.com',//你的邮箱
-            // 这里密码不是qq密码，是你设置的smtp授权码
-            pass: 'kqduhyovdadsgacd',
-        }
-    });
-    let mailOptions = {
-        from: '1401440047@qq.com', // 这里写上你自己的邮箱
-        to: '1652268479@qq.com', // 这里写上要发送到的邮箱
-        subject: '注册成功', // Subject line
-        html: '<b>欢迎注册本网站</b>' // html body
-    };
-    transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-    });
-
-}
 app.get('/', (req, res) => {
-    sendMail('1652268479@qq.com', '密码修改成功', '<b>密码修改成功</b>')
-    res.sendFile(path.join(__dirname, "public/login.html"));
-})
-
+    res.render('login.html');
+});
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, "public/registration.html"));
+    res.render('registration.html');
 })
 app.get("/login", (req, res) => {
-
-    res.sendFile(path.join(__dirname, "public/login.html"));
+    res.render("pogin.html");
 })
 app.post('/login', (req, res) => {
     var email = req.body.email
@@ -180,33 +152,38 @@ app.post('/login', (req, res) => {
             alert("Invalid email address!")
         }
     })
-
 })
-
 app.post('/repassword', (req, res) => {
+    var email = req.body.email
+    sendMail(email, '密码修改', '<a href="http://localhost:3000/password?email="+email>密码修改</a>')
+})
+app.get("/success", (req, res) => {
+    res.render("success.html");
+});
+app.get("/password", (req, res) => {
+    res.render("password.html", {email: req.query.email});
+});
+app.post("/password", (req, res) => {
     var email = req.body.email
     let salt = bcrypt.genSaltSync(saltRounds)
     var password = bcrypt.hashSync(req.body.password, salt)
-
     User.update({email: email}, {password: password}, {multi: false}, function (err, doc) {
         if (err) {
             alert("Wrong password!")
-        } else {alert("the password is change")
-            sendMail(email, '密码修改成功', '<b>密码修改成功</b>')
-            res.sendFile(path.join(__dirname, "public/login.html"));
+        } else {
+            alert("the password is change")
+            res.render("login.html");
         }
     })
-})
-app.get("/success", (req, res) => {
-    res.sendFile(path.join(__dirname, "public/success.html"));
+    res.render("success.html");
 });
+
 app.get("/reqtask", (req, res) => {
-    res.sendFile(path.join(__dirname, "public/reqtask.html"));
+    res.render("reqtask.html");
 })
 app.get("/repassword", (req, res) => {
-    res.sendFile(path.join(__dirname, "public/repassword.html"));
+    res.render("repassword.html");
 })
-
 var User = mongoose.model('User', userSchema)
 app.post('/register', (req, res) => {
     var body = req.body;
@@ -246,5 +223,33 @@ app.post('/register', (req, res) => {
     })
 
 })
+
+function sendMail(tos, subject, msg) {
+
+    let transporter = nodemailer.createTransport({
+        service: 'qq', // 使用了内置传输发送邮件 查看支持列表：https://nodemailer.com/smtp/well-known/
+        port: 465, // SMTP 端口
+        secureConnection: true, // 使用了 SSL
+        auth: {
+            user: '1401440047@qq.com',//你的邮箱
+            // 这里密码不是qq密码，是你设置的smtp授权码
+            pass: 'kqduhyovdadsgacd',
+        }
+    });
+    let mailOptions = {
+        from: '1401440047@qq.com', // 这里写上你自己的邮箱
+        to: '1652268479@qq.com', // 这里写上要发送到的邮箱
+        subject: '注册成功', // Subject line
+        html: '<b>欢迎注册本网站</b>' // html body
+    };
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);
+    });
+
+}
+
 const PORT = process.env.PORT || 3000;
-app.listen(PORT)
+app.listen(PORT);
