@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53a43b3a-4d3a-4eb3-bb2d-b03aab883063" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/mycss.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/mycss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/validator.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/validator.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/registration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/repassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/repassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/serve.js" beforeDir="false" afterPath="$PROJECT_DIR$/serve.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600411734397</updated>
-      <workItem from="1600411737024" duration="18669000" />
+      <workItem from="1600411737024" duration="18972000" />
     </task>
     <servers />
   </component>

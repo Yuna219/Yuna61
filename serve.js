@@ -135,7 +135,7 @@ app.get('/register', (req, res) => {
     res.render('registration.html');
 })
 app.get("/login", (req, res) => {
-    res.render("pogin.html");
+    res.render("login.html");
 })
 app.post('/login', (req, res) => {
     var email = req.body.email
@@ -155,7 +155,7 @@ app.post('/login', (req, res) => {
 })
 app.post('/repassword', (req, res) => {
     var email = req.body.email
-    sendMail(email, '密码修改', '<a href="http://localhost:3000/password?email="+email>密码修改</a>')
+    sendMail(email, '密码修改', '<a href="https://protected-harbor-33383.herokuapp.com/password?email="+email>密码修改</a>')
 })
 app.get("/success", (req, res) => {
     res.render("success.html");
