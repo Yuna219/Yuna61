@@ -115,15 +115,15 @@
     </div> <!-- card.// -->
 </form>
 <script>
-    // var email = localStorage.getItem("email");
-    // var password = localStorage.getItem("password");
-    // $("#email").val(email)
-    // $("#password").val(password)
-    // if (email != '' && password != '') {
-    //     $("input[type=checkbox]").prop('checked', true)
-    //     var form = document.getElementById('formid');
-    //     form.submit();
-    // }
+    var email = localStorage.getItem("email");
+    var password = localStorage.getItem("password");
+    $("#email").val(email)
+    $("#password").val(password)
+    if (email != '' && password != '') {
+        $("input[type=checkbox]").prop('checked', true)
+        var form = document.getElementById('formid');
+        form.submit();
+    }
 
     function Submit(event) {
         if ($("input[type=checkbox]").prop('checked')) {
