@@ -1,12 +1,7 @@
-const data = require('./data');
-const express = require('express');
+var http =require('http')
+http.createServer(function (request, response){
 
-const PORT = process.env.PORT || 3000;
-
-const app = express();
-
-app.get('/user', (req, res) => {
-    res.send(data);
-});
-
-app.listen(PORT);
+response.writeHead(200,{"Content-Type":"text/plain"})
+response.end( "Hello world\n")
+I
+}).listen(process.env.PORT)
