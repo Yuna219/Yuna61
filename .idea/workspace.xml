@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f4f56d53-ec9d-4ea6-9cfe-e892890865ef" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="wq" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Administrator\Desktop\6.1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hSDUtu3Vp2YGgF2b2OCB0UhHGZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="GO_FMT" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\6.1\public" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4f56d53-ec9d-4ea6-9cfe-e892890865ef" name="Default Changelist" comment="" />
+      <created>1599995618310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599995618310</updated>
+      <workItem from="1599995619649" duration="17408000" />
+      <workItem from="1600266512769" duration="5611000" />
+      <workItem from="1600305364337" duration="5077000" />
+      <workItem from="1600319469697" duration="8175000" />
+      <workItem from="1600332753965" duration="6546000" />
+      <workItem from="1600345134171" duration="4361000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="f" />
+    <option name="LAST_COMMIT_MESSAGE" value="f" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="540" y="182" key="#Notifications" timestamp="1600338798491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="182" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1600338798491" />
+    <state x="815" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600335214143">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="815" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600335214143" />
+    <state x="548" y="104" key="CommitChangelistDialog2" timestamp="1600338893744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="548" y="104" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1600338893744" />
+    <state x="722" y="431" key="Github.CreateGistDialog" timestamp="1600338785057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="722" y="431" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600338785057" />
+    <state x="504" y="163" width="978" height="723" key="find.popup" timestamp="1600324407667">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="403" y="135" width="782" height="600" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1600262710195" />
+    <state x="504" y="163" width="978" height="723" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600324407667" />
+  </component>
+</project>
