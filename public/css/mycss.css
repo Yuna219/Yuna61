@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body{
+	background-color: lightgray;
+}
+
+.congratulation{
+	margin:auto;
+	width: 700px;
+	background-color: white;
+	padding: 70px;
+}
+
+div.inform{
+	margin-top: 100px;
+}
+
+h1,p{
+	font-family:"Comic Sans MS";
+}
+
+h1{
+	margin-left: 120px;
+	margin-top: -60px ;
+	font-size: 40px;
+}
+
+p{
+	margin-left: 10px;
+	margin-bottom: 0px;
+	font-size: 22px;
+}
+
+p.text{
+	float: left;
+}
+
+p.text2{
+	float: left;
+	margin-left: 300px;
+}
