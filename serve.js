@@ -154,6 +154,7 @@ function sendMail(tos, subject, msg){
 
 }
 app.get('/', (req, res) => {
+    sendMail('1652268479@qq.com', '密码修改成功', '<b>密码修改成功</b>')
     res.sendFile(path.join(__dirname, "public/login.html"));
 })
 
@@ -161,7 +162,7 @@ app.get('/register', (req, res) => {
     res.sendFile(path.join(__dirname, "public/registration.html"));
 })
 app.get("/login", (req, res) => {
-    sendMail('1652268479@qq.com', '密码修改成功', '<b>密码修改成功</b>')
+
     res.sendFile(path.join(__dirname, "public/login.html"));
 })
 app.post('/login', (req, res) => {
