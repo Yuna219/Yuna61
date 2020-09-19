@@ -155,7 +155,7 @@ app.post('/login', (req, res) => {
 })
 app.post('/repassword', (req, res) => {
     var email = req.body.email
-    sendMail(email, '密码修改', '<a href="https://protected-harbor-33383.herokuapp.com/password?email='+email+'">密码修改</a>')
+    sendMail(email, '密码修改', '<a href="https://protected-harbor-33383.herokuapp.com/password?email=">密码修改</a>')
 })
 app.get("/success", (req, res) => {
     res.render("success.html");
