@@ -238,9 +238,9 @@ function sendMail(tos, subject, msg) {
     });
     let mailOptions = {
         from: '1401440047@qq.com', // 这里写上你自己的邮箱
-        to: '1652268479@qq.com', // 这里写上要发送到的邮箱
-        subject: '注册成功', // Subject line
-        html: '<b>欢迎注册本网站</b>' // html body
+        to: tos, // 这里写上要发送到的邮箱
+        subject: subject, // Subject line
+        html: msg // html body
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
